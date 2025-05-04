@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<img src="logo.png"alt="logo"width="250"height="200">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth Primary School</title>
+    <link rel="stylesheet" href="css/main.css">
+   
+    <style>
+        body {
+            background-color: lime;
+            font-family: Times New Romans, sans-serif;
+            text-align:center;
+            color: #333;
+        }
+        header {
+            background-color:lime;
+            color: black;
+            padding: 35px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        footer {
+            background-color:lime;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Animation Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #33CC33, #66FF66, #99FF99);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>
+
+<body>
+<marquee><b>OUR ADMISSION  IS STILL OPEN BEGINNING AT 8:00AM-5:00PM FROM  MONDAY-SATURDAY. HAVE A VISION</marquee><b>
+    <header>
+        <h1>WELCOME TO TRUTH PRIMARY SCHOOL</h1>
+        <nav>
+            <ul>
+                 <li><a href="Home.html">Home</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="Academics.html">Academics</a></li>
+                <li><a href="Admission.html">Admission</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admission Form - Truth Primary School</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    form {
+      background: #fff;
+      padding: 45px;
+      max-width: 800px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #2d89ef;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1b5fad;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">Admission Form - Truth Primary School</h2>
+
+  <form action="submit_admission.php" method="POST">
+    <label for="full_name">Full Name of the Learner/pupil:</label>
+    <input type="text" id="full_name" name="full_name" required>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="">--Select--</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+
+    <label for="class_applying">Class Applying For:</label>
+    <select id="class_applying" name="class_applying" required>
+      <option value="">--Select--</option>
+      <option value="Nursery Baby">Nursery Baby</option>
+      <option value="Nursery Middle">Nursery Middle</option>
+      <option value="Nursery Top">Nursery Top</option>
+      <option value="Primary One">Primary One</option>
+      <option value="Primary Two">Primary Two</option>
+      <option value="Primary Three">Primary Three</option>
+      <option value="Primary Four">Primary Four</option>
+      <option value="Primary Five">Primary Five</option>
+      <option value="Primary Six">Primary Six</option>
+      <option value="Primary Seven">Primary Seven</option>
+    </select>
+
+    <label for="parent_name">Parent/Guardian's Name:</label>
+    <input type="text" id="parent_name" name="parent_name" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,12}" placeholder="e.g. 0701234567">
+
+    <label for="email">Email Address (optional):</label>
+    <input type="email" id="email" name="email">
+
+    <label for="address">Home Address:</label>
+    <textarea id="address" name="address" rows="3" required></textarea>
+<html lang="en">
+<head>
+    <meta charset="UTF-10">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Report Card</title>
+</head>
+<body>
+    <h1>Upload Report Card from the previous school</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">Choose report card file (PDF, JPG, JPEG, PNG):</label>
+        <input type="file" name="file" id="file" required>
+        <button type="submit">Upload</button>
+
+
+    <label for="notes">Additional Notes:</label>
+    <textarea id="notes" name="notes" rows="3" placeholder="Anything you'd like us to know..."></textarea>
+
+    <button type="submit">Submit Application</button>
+  </form>
+
+</body>
+</html>
+
